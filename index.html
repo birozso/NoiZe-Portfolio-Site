@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NoiZe Portfolio page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina:400,700">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+    </head>
+
+    <body>
+        <header class="top_header">                  
+            <div class="logo_area">
+                <div class="hamburgerm_area">
+                    <a id="menu_button" class="header_menu">
+                        <svg class="drawing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                        </svg>
+                    </a>
+                </div>
+                <img class="logo_svg" src="images/Logo_2.svg" alt="NoiZe Web Dev Logo">
+            </div>
+            <div class="headings_topright">
+                <h1 class="header_title">
+                    NoiZe's Portfolio Site
+                </h1>
+                <h3 class="slogan">
+                    We Give Life to Code
+                </h3>
+            </div>
+            <nav id="hamburger_menu" class="navigation">
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#dev">Development</a></li>
+                    <li class="menu_item"><a href="#port">Portfolio</a></li>
+                    <li class="menu_item"><a href="#cred">Credit</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr class="header_line">
+        <section class="main_container">
+            <h2 id="mainh" class="main_head">Working for You</h2>
+            <section class="videobox_content">
+                <h2 id="vid" class="video_head">Development</h2>
+                <video autoplay loop muted poster="images/pexels-photo-245032_1.jpg" class="video_window">
+                    <source src="images/722788240.mp4" type="video/mp4">
+                </video>
+                <article class="main_description" >
+                    <h2 id="dev" class="art_one_head">No matter how fantastic You imagine, we will write it to a Code</h2>
+                    <p class="art_one">Our Team ready to fight against systems and languages. We have solution, for sure! Send your request, or call us anytime. Please look at our portfolio below to check our latest projects.</p>
+                </article>
+            </section>
+            <h2 id="port" class="porfolio_header">Portfolio</h2>
+            <section class="portfolio">
+                <div class="container_one">
+                    <picture>
+                        <source media="(min-width: 450px)" srcset="images/pixelart1.png, images/pixelart2.png 2x">
+                        <img class="pics" src="images/pixelart1.png" alt="PixelArt Maker - a drawing solution">
+                    </picture>
+                    <h2 class="portfolio_head">PixelArt Maker - a drawing solution</h2>
+                    <p class="art_two">The most interesting task it was during Udacity Google Nanodegree Program. We created a drawing solution. You can create a picture on your own. <em>Download it free.</em></p>
+                </div>
+                <div class="container_two">
+                    <picture>
+                        <source media="(min-width: 450px)" srcset="images/arduino1.jpg, images/arduino2.jpg 2x">
+                        <img class="pics" src="images/arduino1.jpg" alt="Arduino project">
+                    </picture>
+                    <h2 class="portfolio_head">Arduino Development Project</h2>
+                    <p class="art_two">Want You control your whole house? Do You want to measure anything? Give us the parameters and we create the complete solution. Hardware + Software , no problem!</p>
+                </div>
+                <div class="container_three">
+                    <picture>
+                        <source media="(min-width: 450px)" srcset="images/JQ1.png, images/JQ2.png 2x">
+                        <img class="pics" src="images/JQ1.png" alt="JQuery programming task solution">
+                    </picture>
+                    <h2 class="portfolio_head">JQuery - We find everything in DOM</h2>
+                    <p class="art_two">Thanks to Udacity we learn everything related to JQuery. So there is no hidden line in JS our HTML. We find everything and can manipulate everything in DOM.</p>
+                </div>
+            </section>
+        </section>
+        <hr class="footer_line">
+        <footer>
+            <p class="copyright">©Copyright 2018 by NoiZe WD. All rights reserved.</p>
+            <a id="cred" class="credits" href="credentials.htm">Credits</a>
+        </footer>
+        <script src="script/handler.js"></script>
+    </body>
+</html>

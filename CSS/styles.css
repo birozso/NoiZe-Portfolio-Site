@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+/* background color changes from lighter to darker*/
+body {
+  line-height: 1.4;
+  font-family: 'Mina', sans-serif;
+  background: -webkit-linear-gradient(top,  #bae4fa 0%,#3486d8 100%);
+}
+
+.navigation {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #48cef7;
+  padding: 1.5em;
+  font-weight: bold;
+}
+
+.top_header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo_area {
+  width: 30%;
+}
+
+.hamburgerm_area {
+  width: 50%;
+}
+
+.logo_svg {
+  width: 50%;
+  margin: 3% 0 0 10%;
+  max-height: 120px;
+}
+
+.header_title {
+  padding-top: 10%;
+  margin-left: 20%;
+}
+
+.slogan {
+  margin-left: 40%;
+}
+
+.headings_topright {
+  width: 70%;
+}
+
+.art_one,
+.art_two {
+  font-size: 1.2em;
+}
+
+.main_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_head {
+  display: none;
+}
+
+.videobox_content {
+  width: 100%;
+}
+
+/* background image in case if eq. does not support video */
+.video_window {
+  padding-left: 10%;
+  width: 80%;
+  max-height: 480px;
+  background-size: cover;
+  background-image: url(images/pexels-photo-245032_1.jpg);
+  background-image: -webkit-image-set(
+    url(images/pexels-photo-245032_1.jpg) 1x,
+    url(images/pexels-photo-245032_2.jpeg) 2x
+  );
+  background-image: image-set(
+    url(images/pexels-photo-245032_1.jpg) 1x,
+    url(images/pexels-photo-245032_2.jpeg) 2x
+  );
+}
+
+.main_description {
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center; 
+}
+
+.pics, 
+.portfolio_head, 
+.art_two {
+  border-radius: 10px;
+}
+
+.pics {
+  box-shadow: 10px 10px 5px #0b5aa8;
+}
+
+.footer_line {
+  margin: 0 5%;
+  height: 0.5em;
+  background: blue;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.credits {
+  display: block;
+  position: relative;
+  margin-left: 80%;
+  font-weight: bold;
+}

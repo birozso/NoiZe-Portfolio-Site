@@ -1,0 +1,206 @@
+.hamburgerm_area {
+  display: none;
+}
+
+/* This trasform moves the gray menu off canvas. */
+.navigation {
+  z-index: 10;
+  background-color: #595959;
+  width: 290px;
+  position: absolute;
+  margin-top: 110px;
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+}
+
+.porfolio_header,
+.video_head {
+  margin-left: 5%;
+}
+
+/* preset the order, prepare to flex-box usage */
+.videobox_content,
+.video_window,
+.main_description,
+.portfolio,
+.container_one,
+.container_two,
+.container_three,
+.porfolio_header {
+  order: 29;
+}
+
+.container_one,
+.container_three {
+  width: 30%;
+  flex-direction: column;
+  margin: 10px auto auto auto;
+}
+
+/* This is a little animation on mouse over */
+.container_one:hover, 
+.container_three:hover {
+  position: relative;
+  -webkit-animation: mymove_one 0.5s 1; /* Safari 4.0 - 8.0 */
+  animation: mymove_one 0.5s 1;
+}
+
+/* gives parameters for moving (animation) */
+@keyframes mymove_one {
+  from {top: 0px;}
+  to {top: -5px;}
+}
+
+.container_two {
+  width: 30%;
+  flex-direction: column;
+  margin: 10px auto auto auto;
+}
+
+.container_two picture > img {
+  position: relative;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  background-color: white;
+}
+
+.container_two picture :hover {
+  position: relative;
+  -webkit-animation: mymove 2s 1;
+  animation: mymove 2s 1;
+}
+
+@keyframes mymove {
+  from {top: 20px;}
+  to {top: 0px;}
+}
+
+.pics,
+.portfolio_head,
+.art_two {
+  width: 100%;
+}
+
+.pics {
+  top: 0;
+}
+
+.portfolio_head {
+  min-height: 68px;
+}
+
+.art_one {
+  max-width: 85%;
+  margin: auto;
+}
+
+.art_two {
+  min-height: 112px;
+}
+
+@media screen and (max-width: 500px) {
+  .slogan {
+    margin-left: 22%;
+    font-size: 1.1em;
+  }
+  
+  .logo_svg {
+    padding: 0 1em;
+  }
+
+  .porfolio_header {
+    order: 0;
+  }
+
+  .porfolio_header,
+  .portfolio_head,
+  .video_head {
+    font-size: 1.25em;
+  }
+
+  .portfolio {
+    order: 1;
+  }
+
+  /* Flex-box setting for Mobile view */
+  .container_one,
+  .container_two,
+  .container_three {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .art_two {
+    white-space: normal;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header_title {
+    font-size: 1.4em;
+    margin: 0 0 0 5%;
+    -webkit-margin-after: 0.2em;
+  }
+
+  /* open calls the menu to the viewport area */
+  .navigation.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .menu_item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .logo_area {
+    width: 20%;
+  }
+
+  .hamburgerm_area {
+    display: block;
+    padding: 1em 1em 0 1em;
+    margin-right: 10px;
+  }
+  
+  .header_menu svg {
+    width: 32px;
+    fill: #595959;
+  }
+
+  .art_one_head {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 611px) {
+  .header_title {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 860px) and (max-width: 1199px) {
+  .header_title {
+    font-size: 3em;
+    -webkit-margin-after: 0.2em;
+  }
+
+  .slogan {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header_title {
+    font-size: 4em;
+  }
+
+  .slogan {
+    font-size: 1.7em;
+  }
+}
